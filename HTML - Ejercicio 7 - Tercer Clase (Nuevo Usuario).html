@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro de Nuevo Usuario</title>
+    </head>
+    <body>
+        <h1>Crear Nueva Cuenta</h1>
+        <fieldset>
+            <legend>Ingrese sus Datos Personales</legend>
+            <form action="http://www.example.com/login.php" method="get">
+                    <br>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" required>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" required>
+                    <label for="dni">Documento</label>
+                    <input type="number" name="dni" maxlength="8">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" minlength="4" maxlength="8" required>
+                    <br><br>
+                    <input type="submit" value="Crear Cuenta">
+                </p>
+            </form>
+        </fieldset>
+        <p><a href="HTML - Ejercicio 7 - Tercer Clase (Inicio Sesión).html">Volver al Inicio de Sesión</a></p>
+    </body>
+</html>
