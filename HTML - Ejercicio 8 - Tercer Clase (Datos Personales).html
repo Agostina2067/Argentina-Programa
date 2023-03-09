@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ingreso Datos Personales</title>
+    </head>
+    <body>
+        <h1>Ingreso de Datos Personales</h1>
+        <form action="http://www.example.com/login.php">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required maxlength="20">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" required maxlength="25">
+            <label for="dni">Documento:</label>
+            <input type="number" name="dni" required>
+            <label for="nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="nacimiento" min="1930-01-01" max="2010-12-31">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <p>Estado Civil
+                <select name="estadoCivil">
+                    <option value="Soltero/a">Soltero/a</option>
+                    <option value="Casado/a">Casado/a</option>
+                    <option value="Divorciado/a">Divorciado/a</option>
+                    <option value="Viudo/a">Viudo/a</option>
+                    <option value="Conviviente">Conviviente</option>
+                </select>
+            </p>
+            <p>Intereses: <br><br>
+                <input type="checkbox" value="Culturales">Culturales
+                <input type="checkbox" value="Deportivos">Deportivos<br>
+                <input type="checkbox" value="Turisticos">Turísticos
+                <input type="checkbox" value="Sociales">Sociales
+                <input type="checkbox" value="Otros">Otros
+            </p>
+            <textarea name="DescripcionIntereses" cols="30" rows="10" placeholder="Describa sus Intereses" maxlength="400"></textarea>
+            <p>País de Residencia: <br>
+                <input type="radio" name="Pais" checked value="Argentina">Argentina
+                <input type="radio" name="Pais" value="Bolivia">Bolivia
+                <input type="radio" name="Pais" value="Brasil">Brasil
+                <input type="radio" name="Pais" value="Colombia">Colombia
+                <input type="radio" name="Pais" value="Costa Rica">Costa Rica
+                <input type="radio" name="Pais" value="Chile">Chile
+                <input type="radio" name="Pais" value="Mexico">México
+                <input type="radio" name="Pais" value="Nicaragua">Nicaragua
+                <input type="radio" name="Pais" value="Panama">Panamá
+                <input type="radio" name="Pais" value="Paraguay">Paraguay
+                <input type="radio" name="Pais" value="Peru">Perú
+                <input type="radio" name="Pais" value="Uruguay">Uruguay
+                <input type="radio" name="Pais" value="Venezuela">Venezuela
+            </p>
+            <input type="image" id="image" alt="Enviar" src="https://idstore.com.br/wp-content/uploads/2018/03/chrome_D8hL1xudfsy.png">
+        </form>
+    </body>
+</html>
